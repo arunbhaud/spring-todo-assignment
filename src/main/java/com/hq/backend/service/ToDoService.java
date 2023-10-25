@@ -22,9 +22,9 @@ public class ToDoService {
 		return todos;
 	}
 
-	public void addTodo(ToDo todo) {	
+	public boolean addTodo(ToDo todo) {	
 		todo.setId(++counter);
-		todos.add(todo);
+		return todos.add(todo);
 	}
 
 	public boolean deleteTodo(long id) {
